@@ -4,6 +4,9 @@ build:
 run-weather-consoleapp:
 	dotnet run --project src/Weather.ConsoleApp/Weather.ConsoleApp.csproj
 
+run-customscope-consoleapp:
+	dotnet run --project src/CustomScope.ConsoleApp/CustomScope.ConsoleApp.csproj
+
 run-weather-api:
 	dotnet run --project src/Weather.Api/Weather.Api.csproj
 

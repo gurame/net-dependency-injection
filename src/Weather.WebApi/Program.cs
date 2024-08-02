@@ -1,3 +1,4 @@
+using Weather.WebApi;
 using Weather.WebApi.Filters;
 using Weather.WebApi.Middlewares;
 
@@ -9,8 +10,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 builder.Services.AddScoped<DurationLoggerFilter>();
+builder.Services.AddHostedService<BackgroundTicker>();
 
 var app = builder.Build();
 

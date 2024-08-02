@@ -17,13 +17,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomScope.ConsoleApp", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiFunction.ConsoleApp", "src\MultiFunction.ConsoleApp\MultiFunction.ConsoleApp.csproj", "{9BC23CB7-F154-4509-98DA-FA9D8149BE84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator.Api", "src\Decorator.Api\Decorator.Api.csproj", "{42FFDAFC-2FA3-46BA-B0DB-699413AE8486}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{62BBC9DA-81B0-4D2D-9CAC-C0603C42CD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -50,6 +49,13 @@ Global
 		{9BC23CB7-F154-4509-98DA-FA9D8149BE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BC23CB7-F154-4509-98DA-FA9D8149BE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BC23CB7-F154-4509-98DA-FA9D8149BE84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FFDAFC-2FA3-46BA-B0DB-699413AE8486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FFDAFC-2FA3-46BA-B0DB-699413AE8486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FFDAFC-2FA3-46BA-B0DB-699413AE8486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FFDAFC-2FA3-46BA-B0DB-699413AE8486}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{62BBC9DA-81B0-4D2D-9CAC-C0603C42CD9C} = {2DC8F0FC-7B6B-4346-9844-FCCC1ABB2606}
@@ -58,5 +64,6 @@ Global
 		{C6DC2E0E-AE1C-4F30-A656-1450A558881B} = {2DC8F0FC-7B6B-4346-9844-FCCC1ABB2606}
 		{38E19E82-4D36-4B4E-8B60-90526AE18BA3} = {2DC8F0FC-7B6B-4346-9844-FCCC1ABB2606}
 		{9BC23CB7-F154-4509-98DA-FA9D8149BE84} = {2DC8F0FC-7B6B-4346-9844-FCCC1ABB2606}
+		{42FFDAFC-2FA3-46BA-B0DB-699413AE8486} = {2DC8F0FC-7B6B-4346-9844-FCCC1ABB2606}
 	EndGlobalSection
 EndGlobal

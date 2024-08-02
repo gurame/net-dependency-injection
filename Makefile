@@ -18,3 +18,6 @@ run-weather-webapi:
 
 run-weather-webapp:
 	dotnet run --project src/Weather.WebApp/Weather.WebApp.csproj
+
+run-decorator-api:
+	dotnet run --project src/Decorator.Api/Decorator.Api.csproj

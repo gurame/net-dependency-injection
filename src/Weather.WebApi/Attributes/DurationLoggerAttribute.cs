@@ -15,7 +15,7 @@ public class DurationLoggerAttribute : Attribute, IAsyncActionFilter
 		finally
 		{
 			sw.Stop();
-			// Resolving ILogger<T> from the HttpContext.RequestServices
+			// Resolving ILogger<T> from the HttpContext.RequestServices, this is not a recommended way to resolve dependencies
 			var serviceProvider = context.HttpContext.RequestServices;
 			var logger = serviceProvider.GetRequiredService<ILogger<DurationLoggerAttribute>>();
 			logger.LogInformation($"Action {context.ActionDescriptor.DisplayName} took {sw.ElapsedMilliseconds}ms");

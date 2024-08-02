@@ -1,4 +1,6 @@
-﻿namespace Weather.Api.Service;
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Weather.Api.Service;
 
 public class IdGenerator
 {

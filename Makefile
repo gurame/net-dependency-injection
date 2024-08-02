@@ -6,3 +6,6 @@ run-weather-consoleapp:
 
 run-weather-api:
 	dotnet run --project src/Weather.Api/Weather.Api.csproj
+
+run-weather-webapi:
+	dotnet run --project src/Weather.WebApi/Weather.WebApi.csproj

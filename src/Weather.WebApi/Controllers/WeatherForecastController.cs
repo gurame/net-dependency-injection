@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Weather.WebApi.Attributes;
 
 namespace Weather.WebApi.Controllers;
 
@@ -13,6 +14,7 @@ public class WeatherForecastController : ControllerBase
 
     // Resolve dependency from method parameter
     [HttpGet(Name = "GetWeatherForecast")]
+    [DurationLogger]
     public IEnumerable<WeatherForecast> Get([FromServices]ILogger<WeatherForecastController> logger)
     {
         logger.LogInformation("Getting weather forecast");

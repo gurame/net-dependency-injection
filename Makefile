@@ -7,6 +7,9 @@ run-weather-consoleapp:
 run-customscope-consoleapp:
 	dotnet run --project src/CustomScope.ConsoleApp/CustomScope.ConsoleApp.csproj
 
+run-multifunction-consoleapp:
+	dotnet run --project src/MultiFunction.ConsoleApp/MultiFunction.ConsoleApp.csproj
+
 run-weather-api:
 	dotnet run --project src/Weather.Api/Weather.Api.csproj
 

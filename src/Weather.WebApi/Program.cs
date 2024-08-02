@@ -1,4 +1,5 @@
 using Weather.WebApi.Filters;
+using Weather.WebApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<DurationLoggerFilter>();
 
 var app = builder.Build();
+
+app.UseMiddleware<DurationLoggerMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

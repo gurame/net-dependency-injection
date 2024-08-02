@@ -16,7 +16,7 @@ public class WeatherForecastController : ControllerBase
     // Resolve dependency from method parameter
     [HttpGet(Name = "GetWeatherForecast")]
     // [DurationLogger]
-    [ServiceFilter(typeof(DurationLoggerFilter))]
+    // [ServiceFilter(typeof(DurationLoggerFilter))]
     public IEnumerable<WeatherForecast> Get([FromServices]ILogger<WeatherForecastController> logger)
     {
         logger.LogInformation("Getting weather forecast");

@@ -9,3 +9,6 @@ run-weather-api:
 
 run-weather-webapi:
 	dotnet run --project src/Weather.WebApi/Weather.WebApi.csproj
+
+run-weather-webapp:
+	dotnet run --project src/Weather.WebApp/Weather.WebApp.csproj

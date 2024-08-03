@@ -1,12 +1,13 @@
 ﻿using System.Diagnostics;
+using Decorator.Api.Logging;
 
 namespace Decorator.Api.Services;
 
 public class LoggerWeatherService : IWeatherService
 {
 	private readonly IWeatherService _weatherService;
-	private readonly ILogger<IWeatherService> _logger;
-    public LoggerWeatherService(IWeatherService weatherService, ILogger<IWeatherService> logger)
+	private readonly ILoggerAdapter<IWeatherService> _logger;
+    public LoggerWeatherService(IWeatherService weatherService, ILoggerAdapter<IWeatherService> logger)
     {
         _weatherService = weatherService;
         _logger = logger;
@@ -14,10 +15,8 @@ public class LoggerWeatherService : IWeatherService
 
     public string GetWeather()
     {
-        var sw = Stopwatch.StartNew();
+        using var timed = _logger.TimedOperation("GetWeather");
 		var result = _weatherService.GetWeather();
-		sw.Stop();
-		_logger.LogInformation($"GetWeather took {sw.ElapsedMilliseconds}ms");
 		return result;
     }
 }

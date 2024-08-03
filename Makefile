@@ -21,3 +21,6 @@ run-weather-webapp:
 
 run-decorator-api:
 	dotnet run --project src/Decorator.Api/Decorator.Api.csproj
+
+run-scanning-consoleapp:
+	dotnet run --project src/Scanning.ConsoleApp/Scanning.ConsoleApp.csproj

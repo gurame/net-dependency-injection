@@ -24,3 +24,6 @@ run-decorator-api:
 
 run-scanning-consoleapp:
 	dotnet run --project src/Scanning.ConsoleApp/Scanning.ConsoleApp.csproj
+
+run-consumer-consoleapp:
+	dotnet run --project src/Consumer.ConsoleApp/Consumer.ConsoleApp.csproj
